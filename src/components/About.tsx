@@ -4,32 +4,31 @@ import { Code, Palette, Users, Trophy } from "lucide-react";
 
 const About = () => {
   const skills = {
-    frontend: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Vue.js", "Angular"],
-    backend: ["Node.js", "Python", "Express", "Django", "PostgreSQL", "MongoDB"],
-    design: ["Figma", "Canva", "Adobe Creative Suite", "UI/UX Design", "Prototyping"],
-    other: ["Git", "Docker", "AWS", "Vercel", "REST APIs", "GraphQL"]
+    fullstack: ["React", "TypeScript", "Node.js", "Python", "Express", "PostgreSQL", "MongoDB", "REST APIs"],
+    ai: ["Machine Learning", "TensorFlow", "Scikit-learn", "Pandas", "NumPy", "Recommender Systems", "Data Analysis"],
+    creative: ["Canva", "Figma", "UI/UX Design", "Color Theory", "Brand Strategy", "Marketing Design"]
   };
 
   const experiences = [
     {
       icon: <Code className="h-6 w-6" />,
-      title: "Full Stack Development",
-      description: "3+ years building scalable web applications with modern tech stacks"
+      title: "AI Enthusiast",
+      description: "Actively learning ML, building recommender systems and exploring generative AI"
+    },
+    {
+      icon: <Trophy className="h-6 w-6" />,
+      title: "Full Stack Developer",
+      description: "Building scalable web applications with React, Node.js, and modern frameworks"
     },
     {
       icon: <Palette className="h-6 w-6" />,
-      title: "UI/UX Design",
-      description: "Expert in Canva and design tools, creating beautiful user experiences"
+      title: "Creative Designer",
+      description: "Expert in Canva and UI/UX design, crafting beautiful brand experiences"
     },
     {
       icon: <Users className="h-6 w-6" />,
       title: "TEDx Marketing Team",
-      description: "Leading marketing initiatives and brand strategy for TEDx events"
-    },
-    {
-      icon: <Trophy className="h-6 w-6" />,
-      title: "Innovation Leader",
-      description: "Passionate about emerging technologies and continuous learning"
+      description: "Leading creative campaigns and brand strategy for TEDx events"
     }
   ];
 
@@ -41,8 +40,9 @@ const About = () => {
             About <span className="gradient-primary bg-clip-text text-transparent">Me</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            I'm a passionate full-stack developer who loves creating digital experiences that make a difference. 
-            With expertise in both development and design, I bring a unique perspective to every project.
+            I'm a B.Tech 2nd year student deeply interested in blending AI, engineering, and creativity to build 
+            real-world solutions. From full-stack foundations to machine learning experiments, I'm actively exploring 
+            the intersection of technology and innovation while honing my design skills.
           </p>
         </div>
 
@@ -66,29 +66,75 @@ const About = () => {
         </div>
 
         {/* Skills Section */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {Object.entries(skills).map(([category, skillList], index) => (
-            <div 
-              key={category}
-              className="animate-slideInUp"
-              style={{ animationDelay: `${index * 0.2}s` }}
-            >
-              <h3 className="text-xl font-semibold mb-4 capitalize text-primary">
-                {category === 'other' ? 'Tools & Technologies' : category}
-              </h3>
-              <div className="space-y-2">
-                {skillList.map((skill) => (
-                  <Badge
-                    key={skill}
-                    variant="outline"
-                    className="mr-2 mb-2 hover:border-primary hover:bg-primary/10 transition-smooth"
-                  >
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
-            </div>
-          ))}
+        <div className="grid md:grid-cols-3 gap-8">
+          <div className="animate-slideInUp" style={{ animationDelay: "0s" }}>
+            <Card className="gradient-card border-border h-full">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-semibold mb-4 text-primary flex items-center gap-2">
+                  <Code className="h-5 w-5" />
+                  Full Stack Development
+                </h3>
+                <div className="space-y-2">
+                  {skills.fullstack.map((skill) => (
+                    <Badge
+                      key={skill}
+                      variant="outline"
+                      className="mr-2 mb-2 hover:border-primary hover:bg-primary/10 transition-smooth"
+                    >
+                      {skill}
+                    </Badge>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+          
+          <div className="animate-slideInUp" style={{ animationDelay: "0.2s" }}>
+            <Card className="gradient-card border-border h-full">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-semibold mb-4 text-primary flex items-center gap-2">
+                  <Trophy className="h-5 w-5" />
+                  AI & Data Science
+                </h3>
+                <div className="space-y-2">
+                  {skills.ai.map((skill) => (
+                    <Badge
+                      key={skill}
+                      variant="outline"
+                      className="mr-2 mb-2 hover:border-primary hover:bg-primary/10 transition-smooth"
+                    >
+                      {skill}
+                    </Badge>
+                  ))}
+                </div>
+                <p className="text-xs text-muted-foreground mt-4 italic">
+                  Currently Learning & Practicing
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+          
+          <div className="animate-slideInUp" style={{ animationDelay: "0.4s" }}>
+            <Card className="gradient-card border-border h-full">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-semibold mb-4 text-primary flex items-center gap-2">
+                  <Palette className="h-5 w-5" />
+                  Design & Creative
+                </h3>
+                <div className="space-y-2">
+                  {skills.creative.map((skill) => (
+                    <Badge
+                      key={skill}
+                      variant="outline"
+                      className="mr-2 mb-2 hover:border-primary hover:bg-primary/10 transition-smooth"
+                    >
+                      {skill}
+                    </Badge>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
 
         {/* Personal Touch */}
@@ -99,9 +145,9 @@ const About = () => {
                 Beyond Code
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                When I'm not coding, you'll find me designing marketing materials for TEDx events, 
-                exploring new design trends on Canva, or mentoring aspiring developers. I believe in 
-                the power of community and continuous learning to drive innovation in tech.
+                When I'm not coding or training ML models, you'll find me designing marketing materials for TEDx events, 
+                exploring new design trends on Canva, or experimenting with AI notebooks on Kaggle. I believe in 
+                the power of blending technology, AI, and creativity to build products that truly make a difference.
               </p>
             </CardContent>
           </Card>

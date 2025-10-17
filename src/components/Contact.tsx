@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, MapPin, Phone, Send, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, MapPin, Phone, Send, Github, Linkedin, Twitter, Download } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 
@@ -84,12 +84,19 @@ const Contact = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-slideInUp">
           <h2 className="text-4xl md:text-5xl font-bold font-display mb-6">
-            Let's <span className="gradient-primary bg-clip-text text-transparent">Connect</span>
+            Get In <span className="gradient-primary bg-clip-text text-transparent">Touch</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to collaborate on your next project? I'd love to hear from you. 
-            Let's create something amazing together!
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+            Let's create something amazing together! Whether it's a project collaboration, internship opportunity, 
+            or just a chat about AI and tech.
           </p>
+          <Button 
+            size="lg"
+            className="gradient-primary text-primary-foreground hover:scale-105 transition-bounce shadow-3d animate-glow"
+          >
+            <Download className="h-5 w-5 mr-2" />
+            Download Resume
+          </Button>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
@@ -246,9 +253,9 @@ const Contact = () => {
                 <div className="w-12 h-12 rounded-full bg-green-500/20 border border-green-500/30 flex items-center justify-center mx-auto mb-4">
                   <div className="w-3 h-3 rounded-full bg-green-400 animate-pulse"></div>
                 </div>
-                <h4 className="font-semibold mb-2 text-green-400">Available for Projects</h4>
+                <h4 className="font-semibold mb-2 text-green-400">Open to Opportunities</h4>
                 <p className="text-sm text-muted-foreground">
-                  Currently open to new opportunities and collaborations
+                  Actively seeking AI/ML internships and collaborative projects
                 </p>
               </CardContent>
             </Card>

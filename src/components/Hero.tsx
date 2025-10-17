@@ -29,7 +29,7 @@ const Hero = () => {
         <div className="space-y-8 animate-slideInUp">
           <div className="space-y-4">
             <p className="text-primary font-medium tracking-wider uppercase">
-              Full Stack Developer & Designer
+              AI & Full Stack Developer | Creative Technologist | TEDx Marketing Member
             </p>
             <h1 className="text-6xl md:text-7xl font-bold font-display leading-tight">
               Hi, I'm{" "}
@@ -38,14 +38,14 @@ const Hero = () => {
               </span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
-              I craft beautiful, functional digital experiences that bridge the gap between design and development. 
-              From pixel-perfect frontends to robust backends, I bring ideas to life.
+              Building impactful products at the intersection of AI, engineering, and design thinking. 
+              I blend technology with creativity to solve real-world problems and create experiences that matter.
             </p>
           </div>
 
           {/* Skills Tags */}
           <div className="flex flex-wrap gap-3">
-            {["React", "Node.js", "TypeScript", "Python", "UI/UX", "Canva"].map((skill) => (
+            {["AI & ML", "Full Stack", "React", "Python", "UI/UX", "Canva"].map((skill) => (
               <span
                 key={skill}
                 className="px-4 py-2 bg-card border border-border rounded-full text-sm font-medium hover:border-primary transition-smooth"

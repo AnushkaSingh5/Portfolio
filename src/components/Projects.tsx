@@ -9,63 +9,47 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "EcoShop - Sustainable E-commerce Platform",
-      description: "A modern e-commerce platform focused on sustainable products with advanced filtering, user reviews, and seamless checkout experience.",
+      title: "Med4You - Healthcare Platform",
+      description: "Comprehensive healthcare platform connecting patients with doctors, featuring appointment scheduling, medical records management, and potential AI-powered symptom analysis.",
       image: ecommerceImg,
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Tailwind"],
+      technologies: ["React", "Node.js", "PostgreSQL", "AI Integration", "Tailwind"],
       liveUrl: "#",
       githubUrl: "#",
-      featured: true
+      featured: true,
+      tags: ["Web App", "Healthcare", "AI Potential"]
     },
     {
       id: 2,
-      title: "TaskFlow - Project Management Suite",
-      description: "Comprehensive project management tool with kanban boards, team collaboration, time tracking, and real-time notifications.",
+      title: "AI Fashion & Outfit Recommender",
+      description: "Smart wardrobe recommendation system using machine learning to suggest outfits based on weather, occasion, and personal style preferences.",
       image: taskManagerImg,
-      technologies: ["Vue.js", "Express", "MongoDB", "Socket.io", "TypeScript"],
+      technologies: ["Python", "TensorFlow", "Flask", "React", "Recommendation Systems"],
       liveUrl: "#",
       githubUrl: "#",
-      featured: true
+      featured: true,
+      tags: ["AI", "ML", "Fashion Tech"]
     },
     {
       id: 3,
-      title: "HealthTracker - Wellness Dashboard",
-      description: "Personal health monitoring app with workout tracking, nutrition logging, and progress visualization.",
-      image: ecommerceImg, // Reusing for demo
-      technologies: ["React Native", "Django", "SQLite", "Chart.js"],
+      title: "TEDx Creative Hub",
+      description: "Custom marketing platform for TEDx events with content management, campaign tracking, and social media integration designed with Canva.",
+      image: ecommerceImg,
+      technologies: ["React", "Firebase", "Canva Integration", "Analytics"],
       liveUrl: "#",
       githubUrl: "#",
-      featured: false
+      featured: false,
+      tags: ["Design Focus", "Marketing", "Web App"]
     },
     {
       id: 4,
-      title: "CryptoWatch - Market Analytics",
-      description: "Real-time cryptocurrency price tracking with portfolio management and market trend analysis.",
-      image: taskManagerImg, // Reusing for demo
-      technologies: ["Next.js", "Python", "Redis", "CoinGecko API"],
+      title: "Smart Study Planner",
+      description: "AI-enhanced study planning app that analyzes learning patterns and suggests optimal study schedules for students.",
+      image: taskManagerImg,
+      technologies: ["React", "Python", "ML Models", "MongoDB"],
       liveUrl: "#",
       githubUrl: "#",
-      featured: false
-    },
-    {
-      id: 5,
-      title: "TEDx Marketing Hub",
-      description: "Custom marketing platform for TEDx events with content management, social media integration, and analytics.",
-      image: ecommerceImg, // Reusing for demo
-      technologies: ["React", "Firebase", "Canva API", "Analytics"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false
-    },
-    {
-      id: 6,
-      title: "AI Content Generator",
-      description: "Smart content creation tool using AI for blog posts, social media content, and marketing copy.",
-      image: taskManagerImg, // Reusing for demo
-      technologies: ["Python", "OpenAI API", "Flask", "React"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false
+      featured: false,
+      tags: ["AI", "Education", "Productivity"]
     }
   ];
 
@@ -77,7 +61,7 @@ const Projects = () => {
             Featured <span className="gradient-primary bg-clip-text text-transparent">Projects</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Here's a showcase of my recent work - from full-stack applications to creative marketing solutions.
+            Showcasing innovation at the intersection of AI, web development, and creative design - projects that solve real-world problems.
           </p>
         </div>
 
@@ -101,9 +85,16 @@ const Projects = () => {
                 <h3 className="text-xl font-semibold mb-3 group-hover:text-primary transition-smooth">
                   {project.title}
                 </h3>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
+                <p className="text-muted-foreground mb-3 leading-relaxed">
                   {project.description}
                 </p>
+                <div className="flex flex-wrap gap-2 mb-3">
+                  {project.tags?.map((tag) => (
+                    <Badge key={tag} className="bg-primary/10 text-primary border-primary/20 text-xs">
+                      {tag}
+                    </Badge>
+                  ))}
+                </div>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech) => (
                     <Badge key={tech} variant="outline" className="text-xs">
@@ -135,33 +126,40 @@ const Projects = () => {
         </div>
 
         {/* Other Projects Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 gap-6">
           {projects.filter(p => !p.featured).map((project, index) => (
             <Card 
               key={project.id}
-              className="group overflow-hidden gradient-card border-border hover:border-primary transition-smooth hover:scale-105 animate-slideInUp"
+              className="group overflow-hidden gradient-card border-border hover:border-primary transition-smooth hover:scale-[1.02] animate-slideInUp"
               style={{ animationDelay: `${(index + 2) * 0.1}s` }}
             >
               <div className="relative overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-32 object-cover group-hover:scale-110 transition-smooth"
+                  className="w-full h-40 object-cover group-hover:scale-110 transition-smooth"
                 />
                 <div className="absolute inset-0 gradient-secondary opacity-0 group-hover:opacity-20 transition-smooth"></div>
               </div>
-              <CardContent className="p-4">
-                <h4 className="font-semibold mb-2 group-hover:text-primary transition-smooth text-sm">
+              <CardContent className="p-5">
+                <h4 className="font-semibold mb-2 group-hover:text-primary transition-smooth">
                   {project.title}
                 </h4>
-                <p className="text-xs text-muted-foreground mb-3 line-clamp-2">
+                <div className="flex flex-wrap gap-2 mb-2">
+                  {project.tags?.map((tag) => (
+                    <Badge key={tag} className="bg-primary/10 text-primary border-primary/20 text-xs">
+                      {tag}
+                    </Badge>
+                  ))}
+                </div>
+                <p className="text-sm text-muted-foreground mb-3 line-clamp-2">
                   {project.description}
                 </p>
                 <div className="flex gap-2">
                   <Button
-                    variant="ghost"
+                    variant="outline"
                     size="sm"
-                    className="flex items-center gap-1 text-xs p-2 h-auto hover:text-primary"
+                    className="flex items-center gap-1 text-xs hover:border-primary"
                   >
                     <ExternalLink className="h-3 w-3" />
                     Demo
@@ -169,7 +167,7 @@ const Projects = () => {
                   <Button
                     variant="ghost"
                     size="sm"
-                    className="flex items-center gap-1 text-xs p-2 h-auto hover:text-primary"
+                    className="flex items-center gap-1 text-xs hover:text-primary"
                   >
                     <Github className="h-3 w-3" />
                     Code
