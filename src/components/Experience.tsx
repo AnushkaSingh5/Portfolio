@@ -41,8 +41,11 @@ const Experience = () => {
     <section id="experience" className="py-20 relative">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-slideInUp">
-          <h2 className="text-4xl md:text-5xl font-bold font-display mb-6">
-            Experience & <span className="gradient-primary bg-clip-text text-transparent">Leadership</span>
+          <h2 className="text-5xl md:text-6xl font-bold font-display mb-10 leading-tight">
+            Experience &{" "}
+            <span className="bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(255,255,255,0.2)]">
+              Leadership
+            </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Combining technical skills with creative leadership - building brands, campaigns, and communities.
@@ -52,9 +55,9 @@ const Experience = () => {
         {/* Main Experience Card */}
         <div className="max-w-4xl mx-auto mb-12">
           {experiences.map((exp, index) => (
-            <Card 
+            <Card
               key={index}
-              className="gradient-card border-border hover:border-primary transition-smooth animate-fadeInScale"
+              className="gradient-card border-border hover:border-primary transition-smooth animate-fadeInScale hover:shadow-[0_0_25px_rgba(139,92,246,0.3)]"
             >
               <CardContent className="p-8">
                 <div className="flex items-start gap-6">

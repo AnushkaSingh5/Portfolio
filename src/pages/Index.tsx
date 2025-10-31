@@ -2,7 +2,6 @@ import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
-import AIExperiments from "@/components/AIExperiments";
 import Experience from "@/components/Experience";
 import Certifications from "@/components/Certifications";
 import FutureGoals from "@/components/FutureGoals";
@@ -15,7 +14,6 @@ const Index = () => {
       <Hero />
       <About />
       <Projects />
-      <AIExperiments />
       <Experience />
       <Certifications />
       <FutureGoals />
@@ -25,7 +23,7 @@ const Index = () => {
       <footer className="py-8 border-t border-border">
         <div className="container mx-auto px-6 text-center">
           <p className="text-muted-foreground">
-            © 2024 Sofia.dev - AI Enthusiast • Full Stack Developer • Creative Technologist
+            © 2025 Anushka.dev - AI Enthusiast • Full Stack Developer • Creative Technologist
           </p>
         </div>
       </footer>

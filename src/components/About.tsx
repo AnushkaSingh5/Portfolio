@@ -1,49 +1,55 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Code, Palette, Users, Trophy } from "lucide-react";
+import { Code, Palette, Users, Trophy,Sparkles } from "lucide-react";
 
 const About = () => {
   const skills = {
-    fullstack: ["React", "TypeScript", "Node.js", "Python", "Express", "PostgreSQL", "MongoDB", "REST APIs"],
-    ai: ["Machine Learning", "TensorFlow", "Scikit-learn", "Pandas", "NumPy", "Recommender Systems", "Data Analysis"],
-    creative: ["Canva", "Figma", "UI/UX Design", "Color Theory", "Brand Strategy", "Marketing Design"]
+    fullstack: ["React", "Node.js", "Express", "MongoDB", "JavaScript (ES6+)", "HTML", "CSS", "Tailwind CSS"],
+    creative: ["UI/UX Design", "Canva", "Figma", "Color Theory", "Brand Design", "Visual Communication"],
+    visual3D: ["3D Animations", "Motion Effects", "Framer Motion", "GSAP", "Interactive Design"],
+    marketing: ["Content Strategy", "Brand Storytelling", "Campaign Planning", "Social Media Marketing"]
   };
 
   const experiences = [
     {
       icon: <Code className="h-6 w-6" />,
-      title: "AI Enthusiast",
-      description: "Actively learning ML, building recommender systems and exploring generative AI"
-    },
-    {
-      icon: <Trophy className="h-6 w-6" />,
       title: "Full Stack Developer",
-      description: "Building scalable web applications with React, Node.js, and modern frameworks"
+      description: "Building modern and scalable web applications using React and Node.js.",
     },
     {
       icon: <Palette className="h-6 w-6" />,
       title: "Creative Designer",
-      description: "Expert in Canva and UI/UX design, crafting beautiful brand experiences"
+      description: "Designing intuitive UI/UX layouts and digital content using Canva.",
+    },
+    {
+      icon: <Sparkles className="h-6 w-6" />,
+      title: "3D Visual Creator",
+      description: "Bringing motion and 3D effects to life for interactive web experiences.",
     },
     {
       icon: <Users className="h-6 w-6" />,
-      title: "TEDx Marketing Team",
-      description: "Leading creative campaigns and brand strategy for TEDx events"
-    }
+      title: "TEDx Marketing Member",
+      description: "Creating impactful visuals and campaigns for TEDx events.",
+    },
   ];
+
 
   return (
     <section id="about" className="py-20 relative">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-slideInUp">
           <h2 className="text-4xl md:text-5xl font-bold font-display mb-6">
-            About <span className="gradient-primary bg-clip-text text-transparent">Me</span>
+            About{" "}
+            <span className="bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(255,255,255,0.2)]">
+              Me
+            </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            I'm a B.Tech 2nd year student deeply interested in blending AI, engineering, and creativity to build 
-            real-world solutions. From full-stack foundations to machine learning experiments, I'm actively exploring 
-            the intersection of technology and innovation while honing my design skills.
+            I'm a 3rd-year B.Tech CSE student passionate about building modern, interactive, and user-focused web experiences. 
+            With a strong foundation in full-stack development and a creative edge in UI/UX and 3D motion design, 
+            I love turning ideas into impactful digital solutions that connect technology with creativity.
           </p>
+
         </div>
 
         {/* Experience Cards */}
@@ -66,20 +72,21 @@ const About = () => {
         </div>
 
         {/* Skills Section */}
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-10">
+          {/* Full Stack Development */}
           <div className="animate-slideInUp" style={{ animationDelay: "0s" }}>
-            <Card className="gradient-card border-border h-full">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-4 text-primary flex items-center gap-2">
-                  <Code className="h-5 w-5" />
+            <Card className="gradient-card border-border h-full transform transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:shadow-primary/30 rounded-2xl">
+              <CardContent className="px-10 py-12">
+                <h3 className="text-2xl font-semibold mb-8 text-primary flex items-center gap-3">
+                  <Code className="h-7 w-7" />
                   Full Stack Development
                 </h3>
-                <div className="space-y-2">
+                <div className="flex flex-wrap gap-4">
                   {skills.fullstack.map((skill) => (
                     <Badge
                       key={skill}
                       variant="outline"
-                      className="mr-2 mb-2 hover:border-primary hover:bg-primary/10 transition-smooth"
+                      className="hover:border-primary hover:bg-primary/10 px-4 py-2 text-sm transition-smooth"
                     >
                       {skill}
                     </Badge>
@@ -88,45 +95,67 @@ const About = () => {
               </CardContent>
             </Card>
           </div>
-          
+
+          {/* Creative Design */}
           <div className="animate-slideInUp" style={{ animationDelay: "0.2s" }}>
-            <Card className="gradient-card border-border h-full">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-4 text-primary flex items-center gap-2">
-                  <Trophy className="h-5 w-5" />
-                  AI & Data Science
+            <Card className="gradient-card border-border h-full transform transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:shadow-pink-400/30 rounded-2xl">
+              <CardContent className="px-10 py-12">
+                <h3 className="text-2xl font-semibold mb-8 text-primary flex items-center gap-3">
+                  <Palette className="h-7 w-7" />
+                  Creative Design
                 </h3>
-                <div className="space-y-2">
-                  {skills.ai.map((skill) => (
-                    <Badge
-                      key={skill}
-                      variant="outline"
-                      className="mr-2 mb-2 hover:border-primary hover:bg-primary/10 transition-smooth"
-                    >
-                      {skill}
-                    </Badge>
-                  ))}
-                </div>
-                <p className="text-xs text-muted-foreground mt-4 italic">
-                  Currently Learning & Practicing
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-          
-          <div className="animate-slideInUp" style={{ animationDelay: "0.4s" }}>
-            <Card className="gradient-card border-border h-full">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-4 text-primary flex items-center gap-2">
-                  <Palette className="h-5 w-5" />
-                  Design & Creative
-                </h3>
-                <div className="space-y-2">
+                <div className="flex flex-wrap gap-4">
                   {skills.creative.map((skill) => (
                     <Badge
                       key={skill}
                       variant="outline"
-                      className="mr-2 mb-2 hover:border-primary hover:bg-primary/10 transition-smooth"
+                      className="hover:border-primary hover:bg-primary/10 px-4 py-2 text-sm transition-smooth"
+                    >
+                      {skill}
+                    </Badge>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* 3D & Motion Design */}
+          <div className="animate-slideInUp" style={{ animationDelay: "0.4s" }}>
+            <Card className="gradient-card border-border h-full transform transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:shadow-purple-400/30 rounded-2xl">
+              <CardContent className="px-10 py-12">
+                <h3 className="text-2xl font-semibold mb-8 text-primary flex items-center gap-3">
+                  <Sparkles className="h-7 w-7" />
+                  3D & Motion Design
+                </h3>
+                <div className="flex flex-wrap gap-4">
+                  {skills.visual3D.map((skill) => (
+                    <Badge
+                      key={skill}
+                      variant="outline"
+                      className="hover:border-primary hover:bg-primary/10 px-4 py-2 text-sm transition-smooth"
+                    >
+                      {skill}
+                    </Badge>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Marketing & Branding */}
+          <div className="animate-slideInUp" style={{ animationDelay: "0.6s" }}>
+            <Card className="gradient-card border-border h-full transform transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:shadow-cyan-400/30 rounded-2xl">
+              <CardContent className="px-10 py-12">
+                <h3 className="text-2xl font-semibold mb-8 text-primary flex items-center gap-3">
+                  <Users className="h-7 w-7" />
+                  Marketing & Branding
+                </h3>
+                <div className="flex flex-wrap gap-4">
+                  {skills.marketing.map((skill) => (
+                    <Badge
+                      key={skill}
+                      variant="outline"
+                      className="hover:border-primary hover:bg-primary/10 px-4 py-2 text-sm transition-smooth"
                     >
                       {skill}
                     </Badge>
@@ -140,14 +169,14 @@ const About = () => {
         {/* Personal Touch */}
         <div className="mt-16 text-center animate-fadeInScale" style={{ animationDelay: "0.8s" }}>
           <Card className="max-w-4xl mx-auto gradient-card border-border">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-semibold mb-4 gradient-secondary bg-clip-text text-transparent">
+            <CardContent className="px-10 py-12">
+              <h3 className="text-2xl font-semibold mb-6 bg-gradient-to-r from-[#6366f1] via-[#8b5cf6] to-[#ec4899] bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(139,92,246,0.3)]">
                 Beyond Code
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                When I'm not coding or training ML models, you'll find me designing marketing materials for TEDx events, 
-                exploring new design trends on Canva, or experimenting with AI notebooks on Kaggle. I believe in 
-                the power of blending technology, AI, and creativity to build products that truly make a difference.
+              <p className="text-muted-foreground leading-relaxed text-base">
+                Outside of development, I love crafting creative visuals, experimenting with 3D motion effects, 
+                and designing digital content for TEDx campaigns. Blending technology with design is what inspires me 
+                to create experiences that stand out and connect with people.
               </p>
             </CardContent>
           </Card>

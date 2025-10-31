@@ -29,23 +29,23 @@ const Hero = () => {
         <div className="space-y-8 animate-slideInUp">
           <div className="space-y-4">
             <p className="text-primary font-medium tracking-wider uppercase">
-              AI & Full Stack Developer | Creative Technologist | TEDx Marketing Member
+              Full Stack Developer | 3D & Motion Design Enthusiast | TEDx Marketing Member
             </p>
             <h1 className="text-6xl md:text-7xl font-bold font-display leading-tight">
               Hi, I'm{" "}
-              <span className="gradient-primary bg-clip-text text-transparent">
-                Sofia
+              <span className="bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(255,255,255,0.2)]">
+                Anushka Singh
               </span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
-              Building impactful products at the intersection of AI, engineering, and design thinking. 
-              I blend technology with creativity to solve real-world problems and create experiences that matter.
+              Passionate Full Stack Developer crafting modern, responsive, and visually engaging web experiences. 
+              I love blending design, motion, and technology to build products that make a real-world impact.
             </p>
           </div>
 
           {/* Skills Tags */}
           <div className="flex flex-wrap gap-3">
-            {["AI & ML", "Full Stack", "React", "Python", "UI/UX", "Canva"].map((skill) => (
+            {["Full Stack", "React", "UI/UX","MongoDB","3D Animations"].map((skill) => (
               <span
                 key={skill}
                 className="px-4 py-2 bg-card border border-border rounded-full text-sm font-medium hover:border-primary transition-smooth"
@@ -76,15 +76,46 @@ const Hero = () => {
 
           {/* Social Links */}
           <div className="flex gap-4">
-            <Button variant="ghost" size="icon" className="hover:text-primary transition-smooth hover:scale-110">
-              <Github className="h-5 w-5" />
-            </Button>
-            <Button variant="ghost" size="icon" className="hover:text-primary transition-smooth hover:scale-110">
-              <Linkedin className="h-5 w-5" />
-            </Button>
-            <Button variant="ghost" size="icon" className="hover:text-primary transition-smooth hover:scale-110">
-              <Mail className="h-5 w-5" />
-            </Button>
+            {/* GitHub */}
+            <a
+              href="https://github.com/AnushkaSingh5"  
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                variant="ghost"
+                size="icon"
+                className="hover:text-primary transition-smooth hover:scale-110"
+              >
+                <Github className="h-5 w-5" />
+              </Button>
+            </a>
+
+            {/* LinkedIn */}
+            <a
+              href="https://www.linkedin.com/in/anushka-singh-5a533b2a4/"  
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                variant="ghost"
+                size="icon"
+                className="hover:text-primary transition-smooth hover:scale-110"
+              >
+                <Linkedin className="h-5 w-5" />
+              </Button>
+            </a>
+
+            {/* Email */}
+            <a href="mailto:singhanushka0522@gmail.com">  
+              <Button
+                variant="ghost"
+                size="icon"
+                className="hover:text-primary transition-smooth hover:scale-110"
+              >
+                <Mail className="h-5 w-5" />
+              </Button>
+            </a>
           </div>
         </div>
 

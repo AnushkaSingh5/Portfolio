@@ -4,64 +4,69 @@ import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github } from "lucide-react";
 import ecommerceImg from "@/assets/project-ecommerce.jpg";
 import taskManagerImg from "@/assets/project-taskmanager.jpg";
+import travellingImg from "@/assets/project-travelling.jpg";
+import ayurvedicImg from "@/assets/project-ayurveda.jpg";
 
 const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Med4You - Healthcare Platform",
-      description: "Comprehensive healthcare platform connecting patients with doctors, featuring appointment scheduling, medical records management, and potential AI-powered symptom analysis.",
+      title: "Med4You - Healthcare Website",
+      description: "A healthcare platform enabling users to pre-book hospital wards, explore hospital facilities, check doctor availability, generate price receipts, and access live ward webcams. Integrated with Google Maps for hospital search by city, state or any particular disease.",
       image: ecommerceImg,
-      technologies: ["React", "Node.js", "PostgreSQL", "AI Integration", "Tailwind"],
-      liveUrl: "#",
-      githubUrl: "#",
+      technologies: ["HTML", "CSS", "JavaScript", "Google Maps API"],
+      liveUrl: "https://med4you.netlify.app/",
+      githubUrl: "https://github.com/AnushkaSingh5/Med4You",
       featured: true,
-      tags: ["Web App", "Healthcare", "AI Potential"]
+      tags: ["Web App", "Healthcare", "Booking System"]
     },
     {
       id: 2,
-      title: "AI Fashion & Outfit Recommender",
-      description: "Smart wardrobe recommendation system using machine learning to suggest outfits based on weather, occasion, and personal style preferences.",
+      title: "Stock Trading Platform",
+      description: "Developed a full-stack trading platform using React, Node.js, and MongoDB with secure JWT authentication. Features an interactive dashboard to track holdings and positions, real-time updates after trades, and live stock insights displayed through charts and graphs.",
       image: taskManagerImg,
-      technologies: ["Python", "TensorFlow", "Flask", "React", "Recommendation Systems"],
-      liveUrl: "#",
-      githubUrl: "#",
+      technologies: ["React", "Node.js", "Express", "MongoDB", "JWT", "Charts.js"],
+      liveUrl: "https://stock-frontend-sage.vercel.app",
+      githubUrl: "https://github.com/AnushkaSingh5/Stock-Trading-Platform",
       featured: true,
-      tags: ["AI", "ML", "Fashion Tech"]
+      tags: ["Web App", "Finance", "Full Stack"]
     },
     {
       id: 3,
-      title: "TEDx Creative Hub",
-      description: "Custom marketing platform for TEDx events with content management, campaign tracking, and social media integration designed with Canva.",
-      image: ecommerceImg,
-      technologies: ["React", "Firebase", "Canva Integration", "Analytics"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false,
-      tags: ["Design Focus", "Marketing", "Web App"]
+      title: "AyurNutriCare - Ayurvedic Diet Platform",
+      description: "A cloud-based platform for Ayurvedic dietitians that auto-generates personalized diet charts using both scientific nutrition values and Ayurvedic principles. Includes patient management, recipe recommendations, and progress tracking with mobile support.",
+      image: ayurvedicImg,
+      technologies: ["React", "Node.js", "Express", "MongoDB", "Tailwind", "API Integration"],
+      liveUrl: "https://ayur-digest-btawlphne-anushkasinghs-projects-f5246ced.vercel.app/",
+      githubUrl: "https://github.com/AnushkaSingh5/AyurNutriCare",
+      featured: true,
+      tags: ["Web App", "Healthcare", "AI", "Full Stack"]
     },
     {
       id: 4,
-      title: "Smart Study Planner",
-      description: "AI-enhanced study planning app that analyzes learning patterns and suggests optimal study schedules for students.",
-      image: taskManagerImg,
-      technologies: ["React", "Python", "ML Models", "MongoDB"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false,
-      tags: ["AI", "Education", "Productivity"]
-    }
+      title: "Wanderlust - Travel Stay Platform",
+      description: "A full-stack web app inspired by Airbnb, enabling users to search stays, view property details, apply filters, and book accommodations with secure authentication and persistent data storage.",
+      image: travellingImg,
+      technologies: ["HTML", "CSS", "JavaScript", "Node.js", "Express", "MongoDB"],
+      liveUrl: "",
+      githubUrl: "https://github.com/AnushkaSingh5/Wanderlust-Travel-Stay-Platform",
+      featured: true,
+      tags: ["Web App", "Travel", "Full Stack"]
+    },
   ];
 
   return (
     <section id="projects" className="py-20 relative">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-slideInUp">
-          <h2 className="text-4xl md:text-5xl font-bold font-display mb-6">
-            Featured <span className="gradient-primary bg-clip-text text-transparent">Projects</span>
+          <h2 className="text-5xl md:text-6xl font-bold font-display mb-10 leading-tight">
+            Featured{" "}
+            <span className="bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(255,255,255,0.2)]">
+              Projects
+            </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Showcasing innovation at the intersection of AI, web development, and creative design - projects that solve real-world problems.
+            Showcasing projects that blend full-stack development, creative design, and motion visuals — turning ideas into engaging digital experiences.
           </p>
         </div>
 
@@ -103,75 +108,33 @@ const Projects = () => {
                   ))}
                 </div>
                 <div className="flex gap-3">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="flex items-center gap-2 hover:border-primary"
-                  >
-                    <ExternalLink className="h-4 w-4" />
-                    Live Demo
-                  </Button>
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    className="flex items-center gap-2 hover:text-primary"
-                  >
-                    <Github className="h-4 w-4" />
-                    Code
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+                  {project.liveUrl && (
+                    <Button
+                      asChild
+                      variant="outline"
+                      size="sm"
+                      className="flex items-center gap-2 hover:border-primary"
+                    >
+                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="h-4 w-4" />
+                        Live Demo
+                      </a>
+                    </Button>
+                  )}
 
-        {/* Other Projects Grid */}
-        <div className="grid md:grid-cols-2 gap-6">
-          {projects.filter(p => !p.featured).map((project, index) => (
-            <Card 
-              key={project.id}
-              className="group overflow-hidden gradient-card border-border hover:border-primary transition-smooth hover:scale-[1.02] animate-slideInUp"
-              style={{ animationDelay: `${(index + 2) * 0.1}s` }}
-            >
-              <div className="relative overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-40 object-cover group-hover:scale-110 transition-smooth"
-                />
-                <div className="absolute inset-0 gradient-secondary opacity-0 group-hover:opacity-20 transition-smooth"></div>
-              </div>
-              <CardContent className="p-5">
-                <h4 className="font-semibold mb-2 group-hover:text-primary transition-smooth">
-                  {project.title}
-                </h4>
-                <div className="flex flex-wrap gap-2 mb-2">
-                  {project.tags?.map((tag) => (
-                    <Badge key={tag} className="bg-primary/10 text-primary border-primary/20 text-xs">
-                      {tag}
-                    </Badge>
-                  ))}
-                </div>
-                <p className="text-sm text-muted-foreground mb-3 line-clamp-2">
-                  {project.description}
-                </p>
-                <div className="flex gap-2">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="flex items-center gap-1 text-xs hover:border-primary"
-                  >
-                    <ExternalLink className="h-3 w-3" />
-                    Demo
-                  </Button>
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    className="flex items-center gap-1 text-xs hover:text-primary"
-                  >
-                    <Github className="h-3 w-3" />
-                    Code
-                  </Button>
+                  {project.githubUrl && (
+                    <Button
+                      asChild
+                      variant="ghost"
+                      size="sm"
+                      className="flex items-center gap-2 hover:border-primary"
+                    >
+                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                        <Github className="h-4 w-4" />
+                        Code
+                      </a>
+                    </Button>
+                  )}
                 </div>
               </CardContent>
             </Card>
@@ -185,6 +148,13 @@ const Projects = () => {
           </p>
           <Button
             size="lg"
+            onClick={() =>
+              window.open(
+                "https://github.com/AnushkaSingh5?tab=repositories",
+                "_blank",
+                "noopener,noreferrer"
+              )
+            }
             className="gradient-primary text-primary-foreground hover:scale-105 transition-bounce shadow-3d"
           >
             View All Projects on GitHub

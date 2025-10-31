@@ -41,19 +41,19 @@ const Contact = () => {
     {
       icon: <Mail className="h-5 w-5" />,
       label: "Email",
-      value: "sofia.dev@email.com",
-      href: "mailto:sofia.dev@email.com"
+      value: "singhanushka0522@gmail.com",
+      href: "mailto:singhanushka0522@gmail.com"
     },
     {
       icon: <Phone className="h-5 w-5" />,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+91 8468055528",
+      href: ""
     },
     {
       icon: <MapPin className="h-5 w-5" />,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Ghaziabad, Uttar Pradesh, India",
       href: "#"
     }
   ];
@@ -62,39 +62,42 @@ const Contact = () => {
     {
       icon: <Github className="h-5 w-5" />,
       label: "GitHub",
-      href: "https://github.com",
-      username: "@sofia-dev"
+      href: "https://github.com/AnushkaSingh5",
+      username: "AnushkaSingh5"
     },
     {
       icon: <Linkedin className="h-5 w-5" />,
       label: "LinkedIn",
-      href: "https://linkedin.com",
-      username: "sofia-developer"
+      href: "https://www.linkedin.com/in/anushka-singh-5a533b2a4/",
+      username: "Anushka Singh"
     },
-    {
-      icon: <Twitter className="h-5 w-5" />,
-      label: "Twitter",
-      href: "https://twitter.com",
-      username: "@sofia_codes"
-    }
   ];
 
   return (
     <section id="contact" className="py-20 relative">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-slideInUp">
-          <h2 className="text-4xl md:text-5xl font-bold font-display mb-6">
-            Get In <span className="gradient-primary bg-clip-text text-transparent">Touch</span>
+          <h2 className="text-5xl md:text-6xl font-bold font-display mb-10 leading-tight">
+            Get In{" "}
+            <span className="bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(255,255,255,0.2)]">
+              Touch
+            </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
             Let's create something amazing together! Whether it's a project collaboration, internship opportunity, 
             or just a chat about AI and tech.
           </p>
-          <Button 
+          <Button
             size="lg"
+            onClick={() =>
+            window.open(
+                "https://drive.google.com/file/d/1vvJf8ns8wXCTy8rnxtoAEMhT9JwcrKHJ/view?usp=sharing",
+                "_blank",
+                "noopener,noreferrer"
+            )}
             className="gradient-primary text-primary-foreground hover:scale-105 transition-bounce shadow-3d animate-glow"
           >
-            <Download className="h-5 w-5 mr-2" />
+          <Download className="h-5 w-5 mr-2" />
             Download Resume
           </Button>
         </div>
@@ -103,10 +106,13 @@ const Contact = () => {
           {/* Contact Form */}
           <Card className="gradient-card border-border animate-fadeInScale">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-semibold mb-6 gradient-secondary bg-clip-text text-transparent">
-                Send me a message
+              <h3 className="text-3xl md:text-4xl font-bold font-display mb-6 leading-tight text-white">
+                Send me a{" "}
+                <span className="bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(255,255,255,0.2)]">
+                  message
+                </span>
               </h3>
-              
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
@@ -118,7 +124,7 @@ const Contact = () => {
                       name="name"
                       value={formData.name}
                       onChange={handleInputChange}
-                      placeholder="John Doe"
+                      placeholder="Name Surname"
                       required
                       className="border-border focus:border-primary transition-smooth"
                     />
@@ -133,7 +139,7 @@ const Contact = () => {
                       type="email"
                       value={formData.email}
                       onChange={handleInputChange}
-                      placeholder="john@example.com"
+                      placeholder="random@example.com"
                       required
                       className="border-border focus:border-primary transition-smooth"
                     />
@@ -188,10 +194,13 @@ const Contact = () => {
             {/* Contact Information */}
             <Card className="gradient-card border-border">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-6 gradient-primary bg-clip-text text-transparent">
-                  Get in touch
+                <h3 className="text-3xl md:text-4xl font-bold font-display mb-6 leading-tight text-white">
+                  Contact{" "}
+                  <span className="bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(255,255,255,0.2)]">
+                    Me
+                  </span>
                 </h3>
-                
+
                 <div className="space-y-4">
                   {contactInfo.map((info, index) => (
                     <a
@@ -217,8 +226,11 @@ const Contact = () => {
             {/* Social Links */}
             <Card className="gradient-card border-border">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold mb-6 gradient-secondary bg-clip-text text-transparent">
-                  Follow me
+                <h3 className="text-3xl md:text-4xl font-bold font-display mb-6 leading-tight text-white">
+                  Follow{" "}
+                  <span className="bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(255,255,255,0.2)]">
+                    me
+                  </span>
                 </h3>
                 
                 <div className="space-y-4">
@@ -255,7 +267,7 @@ const Contact = () => {
                 </div>
                 <h4 className="font-semibold mb-2 text-green-400">Open to Opportunities</h4>
                 <p className="text-sm text-muted-foreground">
-                  Actively seeking AI/ML internships and collaborative projects
+                  Actively exploring opportunities in full-stack development, basic AI-based projects, and creative tech collaborations.
                 </p>
               </CardContent>
             </Card>

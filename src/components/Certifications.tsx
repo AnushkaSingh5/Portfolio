@@ -7,100 +7,168 @@ const Certifications = () => {
   const certifications = [
     {
       id: 1,
-      title: "AWS Certified Solutions Architect",
-      issuer: "Amazon Web Services",
+      title: "Full Stack Development Internship (100 Hours)",
+      issuer: "Microsoft Learn Student Ambassadors - KIET",
       date: "2024",
-      credentialId: "AWS-ASA-2024-001",
-      description: "Comprehensive cloud architecture and AWS services expertise",
-      skills: ["AWS", "Cloud Architecture", "DevOps", "Security"],
+      credentialId: "MLSA-FSD-2024",
+      description:
+        "Completed a 100-hour internship focusing on full stack web development, working with React, Node.js, and MongoDB to build scalable applications.",
+      skills: ["React", "Node.js", "MongoDB", "API Integration"],
       level: "Professional",
-      verified: true
+      verified: true,
+      link:"https://drive.google.com/file/d/1W221gH1Ljntpj_BArWomdlheJCPDiFnN/view?usp=sharing",
     },
     {
       id: 2,
-      title: "Meta Frontend Developer Professional Certificate",
-      issuer: "Meta (Facebook)",
-      date: "2023",
-      credentialId: "META-FE-2023-456",
-      description: "Advanced React development and modern frontend practices",
-      skills: ["React", "JavaScript", "HTML/CSS", "UX/UI"],
+      title: "Palo Alto Networks – Cybersecurity Foundation",
+      issuer: "Palo Alto Networks Cybersecurity Academy",
+      date: "2025",
+      credentialId: "PALO-CSF-2025",
+      description:
+        "Completed cybersecurity fundamentals training, covering network security, firewalls, and digital threat prevention concepts.",
+      skills: ["Cybersecurity", "Networking", "Threat Analysis", "Firewalls"],
       level: "Professional",
-      verified: true
+      verified: true,
+      link:"https://drive.google.com/file/d/12SemM4_Nt1gM2uCdVNsCsd6eH6U8QJ4c/view?usp=sharing",
     },
     {
       id: 3,
-      title: "Google UX Design Certificate",
-      issuer: "Google",
-      date: "2023",
-      credentialId: "GOOGLE-UX-2023-789",
-      description: "Complete UX design process from research to prototyping",
-      skills: ["UX Design", "Figma", "User Research", "Prototyping"],
-      level: "Professional",
-      verified: true
+      title:
+        "Infosys Springboard – Comprehensive Training on Unix and Linux OS Fundamentals",
+      issuer: "Infosys Springboard",
+      date: "2025",
+      credentialId: "INFO-LINUX-2025",
+      description:
+        "Learned core Unix/Linux commands, shell scripting, and OS fundamentals used in DevOps and system-level operations.",
+      skills: ["Linux", "Unix", "Shell Scripting", "Operating Systems"],
+      level: "Associate",
+      verified: true,
+      link:"https://drive.google.com/file/d/1WfVU3r-33pXqA6a3c_w7xh9R0D49OWUN/view?usp=sharing",
     },
     {
       id: 4,
-      title: "MongoDB Certified Developer",
-      issuer: "MongoDB Inc.",
-      date: "2023",
-      credentialId: "MDB-DEV-2023-123",
-      description: "Database design, queries, and application development",
-      skills: ["MongoDB", "NoSQL", "Database Design", "Node.js"],
-      level: "Associate",
-      verified: true
+      title: "Getting Started with DevOps",
+      issuer: "LinkedIn Learning",
+      date: "2025",
+      credentialId: "LINKEDIN-DEVOPS-2025",
+      description:
+        "Fundamentals of DevOps principles, automation, and CI/CD pipelines.",
+      skills: ["DevOps", "CI/CD", "Automation", "Version Control"],
+      level: "Beginner",
+      verified: true,
+      link:"https://drive.google.com/file/d/1CgGc_nTZFtuwzYgf1Vv8a_FQG0oAqV7y/view?usp=sharing",
     },
     {
       id: 5,
-      title: "Canva Design Certification",
-      issuer: "Canva",
-      date: "2022",
-      credentialId: "CANVA-DESIGN-2022-567",
-      description: "Advanced design principles and brand creation",
-      skills: ["Graphic Design", "Branding", "Social Media", "Marketing"],
-      level: "Expert",
-      verified: true
+      title: "Introduction to MongoDB",
+      issuer: "MongoDB University",
+      date: "2025",
+      credentialId: "MDB-INTRO-2025",
+      description:
+        "Gained practical knowledge in NoSQL databases, data modeling, and CRUD operations using MongoDB Atlas and Compass.",
+      skills: ["MongoDB", "NoSQL", "Data Modeling", "Atlas"],
+      level: "Certified",
+      verified: true,
+      link:"https://drive.google.com/file/d/12C5_GUp15Arfp2neAlYoJ5vNmvYpIry1/view?usp=sharing",
     },
     {
       id: 6,
-      title: "Docker Certified Associate",
-      issuer: "Docker Inc.",
-      date: "2023",
-      credentialId: "DOCKER-DCA-2023-890",
-      description: "Container orchestration and deployment strategies",
-      skills: ["Docker", "Kubernetes", "DevOps", "CI/CD"],
-      level: "Associate",
-      verified: true
+      title: "Participation – NASA Space Apps Hackathon",
+      issuer: "NASA International Space Apps Challenge",
+      date: "2025",
+      credentialId: "NASA-HACK-2025",
+      description:
+        "Participated in NASA’s global hackathon, developing innovative tech solutions addressing real-world space and sustainability challenges.",
+      skills: ["Teamwork", "Innovation", "Problem Solving", "Hackathon"],
+      level: "Participation",
+      verified: true,
+      link:"https://drive.google.com/file/d/15ornZ2KEpi7UeRYP8jNtH50-TKHzXVU9/view?usp=sharing",
     },
     {
       id: 7,
-      title: "Scrum Master Certification",
-      issuer: "Scrum Alliance",
-      date: "2022",
-      credentialId: "CSM-2022-234",
-      description: "Agile project management and team leadership",
-      skills: ["Scrum", "Agile", "Project Management", "Leadership"],
-      level: "Certified",
-      verified: true
+      title: "Certificate of Appreciation – Mentorship and Coordination",
+      issuer: "KIET Group of Institutions",
+      date: "2025",
+      credentialId: "KIET-MENTOR-2025",
+      description:
+        "Recognized for exceptional mentorship and coordination efforts during a college-level cultural event.",
+      skills: ["Leadership", "Team Management", "Event Coordination"],
+      level: "Appreciation",
+      verified: true,
+      link:"https://drive.google.com/file/d/1xtd_2wqY5imQRZ7yOUV5ZcIjwB-fMsxw/view?usp=sharing",
     },
     {
       id: 8,
-      title: "HubSpot Content Marketing Certification",
-      issuer: "HubSpot Academy",
-      date: "2022",
-      credentialId: "HUBSPOT-CM-2022-345",
-      description: "Content strategy and marketing automation",
-      skills: ["Content Marketing", "SEO", "Social Media", "Analytics"],
-      level: "Certified",
-      verified: true
-    }
+      title: "Certificate of Management – Cybersecurx Event",
+      issuer: "KIET Group of Institutions",
+      date: "2025",
+      credentialId: "CYBERSEC-MGMT-2025",
+      description:
+        "Acknowledged for successfully managing and coordinating Cybersecurx, a cybersecurity awareness event at the institutional level.",
+      skills: ["Event Management", "Coordination", "Cyber Awareness"],
+      level: "Appreciation",
+      verified: true,
+      link:"",
+    },
+    {
+      id: 9,
+      title: "Certificate of Participation – INNOTECH Hackathon",
+      issuer: "KIET Group of Institutions",
+      date: "2024",
+      credentialId: "INNOTECH-2024",
+      description:
+        "Participated in the institute-level innovation hackathon, presenting a web-based project solution to real-world problems.",
+      skills: ["Hackathon", "Problem Solving", "Innovation"],
+      level: "Participation",
+      verified: true,
+      link:"https://drive.google.com/file/d/1h2V-yGzeFeM42diPYd7W6VuOaS76nh1F/view?usp=sharing",
+    },
+    {
+      id: 10,
+      title: "LeetCode 50 Days Streak Badge",
+      issuer: "LeetCode",
+      date: "2025",
+      credentialId: "LEETCODE-50DAYS-2025",
+      description:
+        "Earned the 50 Days Badge for consistent daily problem-solving and coding practice on LeetCode.",
+      skills: ["Data Structures", "Algorithms", "Problem Solving"],
+      level: "Achievement",
+      verified: true,
+      link:"https://drive.google.com/file/d/18l5GCUw2D6NiVlFfQKHTQI-qjVPDcthy/view?usp=sharing",
+    },
+    {
+      id: 11,
+      title: "Certificate of Volunteering – TEDx KIET",
+      issuer: "TEDx KIET Group of Institutions",
+      date: "2025",
+      credentialId: "TEDX-VOL-2025",
+      description:
+        "Volunteered as part of the organizing team for TEDx KIET, contributing to event logistics and creative design support.",
+      skills: ["Volunteering", "Design", "Teamwork"],
+      level: "Volunteer",
+      verified: true,
+      link:"https://drive.google.com/file/d/1wxC-jGpIF3Pryyj9Pc7-ETmjSXH78WWB/view?usp=sharing",
+    },
   ];
 
-  const getLevelColor = (level: string) => {
+  const getLevelColor = (level) => {
     switch (level.toLowerCase()) {
-      case 'professional': return 'bg-primary/20 text-primary border-primary/30';
-      case 'expert': return 'bg-secondary/20 text-secondary border-secondary/30';
-      case 'associate': return 'bg-accent/20 text-accent border-accent/30';
-      default: return 'bg-muted text-muted-foreground border-border';
+      case "professional":
+        return "bg-primary/20 text-primary border-primary/30";
+      case "associate":
+        return "bg-accent/20 text-accent border-accent/30";
+      case "certified":
+        return "bg-secondary/20 text-secondary border-secondary/30";
+      case "appreciation":
+        return "bg-pink-500/20 text-pink-400 border-pink-500/30";
+      case "participation":
+        return "bg-yellow-500/20 text-yellow-400 border-yellow-500/30";
+      case "achievement":
+        return "bg-green-500/20 text-green-400 border-green-500/30";
+      case "volunteer":
+        return "bg-blue-500/20 text-blue-400 border-blue-500/30";
+      default:
+        return "bg-muted text-muted-foreground border-border";
     }
   };
 
@@ -108,28 +176,29 @@ const Certifications = () => {
     <section id="certifications" className="py-20 relative">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-slideInUp">
-          <h2 className="text-4xl md:text-5xl font-bold font-display mb-6">
-            <span className="gradient-primary bg-clip-text text-transparent">Certifications</span> & Achievements
+          <h2 className="text-5xl md:text-6xl font-bold font-display mb-10 leading-tight">
+            <span className="bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(255,255,255,0.2)]">
+              Certifications
+            </span>{" "}
+            & Achievements
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Continuous learning is at the heart of my professional growth. Here are my verified certifications and achievements.
+            Every certification reflects a milestone in my growth journey — from web development and DevOps to leadership, cybersecurity, and creative event management.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {certifications.map((cert, index) => (
-            <Card 
+            <Card
               key={cert.id}
               className="group gradient-card border-border hover:border-primary transition-smooth hover:scale-105 animate-fadeInScale"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardContent className="p-6">
                 <div className="flex items-start justify-between mb-4">
-                  <div className="text-primary">
-                    <Award className="h-8 w-8" />
-                  </div>
-                  <Badge 
-                    variant="outline" 
+                  <Award className="h-8 w-8 text-primary" />
+                  <Badge
+                    variant="outline"
                     className={`text-xs ${getLevelColor(cert.level)}`}
                   >
                     {cert.level}
@@ -139,16 +208,18 @@ const Certifications = () => {
                 <h3 className="font-semibold mb-2 group-hover:text-primary transition-smooth">
                   {cert.title}
                 </h3>
-                
                 <p className="text-sm text-muted-foreground mb-1">
                   {cert.issuer}
                 </p>
-                
+
                 <div className="flex items-center gap-2 text-xs text-muted-foreground mb-3">
                   <Calendar className="h-3 w-3" />
                   <span>{cert.date}</span>
                   {cert.verified && (
-                    <Badge variant="outline" className="text-xs bg-green-500/10 text-green-400 border-green-500/30">
+                    <Badge
+                      variant="outline"
+                      className="text-xs bg-green-500/10 text-green-400 border-green-500/30"
+                    >
                       Verified
                     </Badge>
                   )}
@@ -158,17 +229,17 @@ const Certifications = () => {
                   {cert.description}
                 </p>
 
-                <div className="flex flex-wrap gap-1 mb-4">
-                  {cert.skills.slice(0, 3).map((skill) => (
-                    <Badge key={skill} variant="outline" className="text-xs">
+                {/* ✅ Display ALL skills */}
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {cert.skills.map((skill) => (
+                    <Badge
+                      key={skill}
+                      variant="outline"
+                      className="text-xs bg-gradient-to-r from-pink-500/10 via-purple-500/10 to-blue-500/10 border border-gray-700 text-purple-300 hover:text-white hover:border-purple-400 transition-all duration-300"
+                    >
                       {skill}
                     </Badge>
                   ))}
-                  {cert.skills.length > 3 && (
-                    <Badge variant="outline" className="text-xs">
-                      +{cert.skills.length - 3} more
-                    </Badge>
-                  )}
                 </div>
 
                 <div className="flex items-center justify-between">
@@ -178,8 +249,8 @@ const Certifications = () => {
                   <Button
                     variant="ghost"
                     size="sm"
-                    className="text-xs p-2 h-auto hover:text-primary"
-                  >
+                    className="text-xs p-2 h-auto hover:border-primary"
+                    onClick={() => cert.link && window.open(cert.link, "_blank")}>
                     <ExternalLink className="h-3 w-3 mr-1" />
                     Verify
                   </Button>
@@ -188,55 +259,7 @@ const Certifications = () => {
             </Card>
           ))}
         </div>
-
-        {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
-          {[
-            { label: "Total Certifications", value: "8+" },
-            { label: "Professional Level", value: "3" },
-            { label: "Years of Learning", value: "5+" },
-            { label: "Verification Rate", value: "100%" }
-          ].map((stat, index) => (
-            <div 
-              key={stat.label}
-              className="text-center animate-fadeInScale"
-              style={{ animationDelay: `${index * 0.1 + 0.8}s` }}
-            >
-              <div className="text-3xl font-bold gradient-primary bg-clip-text text-transparent mb-2">
-                {stat.value}
-              </div>
-              <div className="text-sm text-muted-foreground">
-                {stat.label}
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* CTA */}
-        <div className="text-center animate-fadeInScale" style={{ animationDelay: "1.2s" }}>
-          <Card className="max-w-2xl mx-auto gradient-card border-border">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-semibold mb-4 gradient-secondary bg-clip-text text-transparent">
-                Always Learning
-              </h3>
-              <p className="text-muted-foreground mb-6">
-                I'm currently pursuing additional certifications in AI/ML and advanced cloud architecture. 
-                Staying current with technology trends is essential for delivering cutting-edge solutions.
-              </p>
-              <Button
-                variant="outline"
-                className="hover:border-primary hover:bg-primary/10"
-              >
-                View Full Learning Journey
-              </Button>
-            </CardContent>
-          </Card>
-        </div>
       </div>
-
-      {/* Background Elements */}
-      <div className="absolute top-20 right-20 w-32 h-32 rounded-full gradient-primary opacity-5 animate-float"></div>
-      <div className="absolute bottom-20 left-20 w-24 h-24 rounded-lg gradient-secondary opacity-5 animate-float" style={{ animationDelay: "4s" }}></div>
     </section>
   );
 };

@@ -37,9 +37,10 @@ const Navigation = () => {
     >
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="font-display text-2xl font-bold gradient-primary bg-clip-text text-transparent">
-            Sofia.dev
+          <div className="font-display text-2xl font-bold bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(255,255,255,0.2)]">
+            Anushka.dev
           </div>
+
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">

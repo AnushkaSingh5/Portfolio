@@ -5,25 +5,28 @@ import { Rocket, Sparkles, Users, BookOpen } from "lucide-react";
 const FutureGoals = () => {
   const goals = [
     {
-      icon: <Rocket className="h-6 w-6" />,
-      title: "AI-Powered Health Assistant",
-      description: "Building an intelligent chatbot for preliminary medical guidance using RAG and LLMs",
-      tags: ["AI", "Healthcare", "LLMs"],
-      timeline: "Q2 2025"
-    },
-    {
       icon: <Sparkles className="h-6 w-6" />,
-      title: "Generative Art Platform",
-      description: "Creating a platform that uses AI to generate custom artwork based on user emotions",
-      tags: ["Generative AI", "Creative Tech"],
-      timeline: "Q2 2025"
+      title: "AI Fashion & Outfit Recommender",
+      description:
+        "Building a smart fashion assistant that suggests outfits based on user preferences, weather, and current trends using machine learning and computer vision.",
+      tags: ["AI", "Fashion Tech", "Machine Learning"],
+      timeline: "ongoing"
     },
     {
       icon: <BookOpen className="h-6 w-6" />,
-      title: "Research in AI Ethics",
-      description: "Exploring bias detection in ML models and responsible AI development practices",
-      tags: ["Research", "Ethics", "ML"],
-      timeline: "Ongoing"
+      title: "PDF Review Dashboard",
+      description:
+        "Developing an intelligent web dashboard where users can upload and view PDFs, extract data using AI or fallback parsers, edit fields, and store them securely in MongoDB using GridFS.",
+      tags: ["Full Stack", "AI", "MongoDB"],
+      timeline: "ongoing"
+    },
+    {
+      icon: <Rocket className="h-6 w-6" />,
+      title: "AI Travel Planner",
+      description:
+        "Creating a travel planning web app powered by AI that personalizes itineraries, suggests destinations, and optimizes trips based on user interests and budget.",
+      tags: ["AI", "Web App", "Personalization"],
+      timeline: "ongoing"
     }
   ];
 
@@ -34,11 +37,14 @@ const FutureGoals = () => {
           <div className="inline-flex items-center justify-center gap-2 mb-4">
             <Rocket className="h-8 w-8 text-primary animate-bounce" />
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold font-display mb-6">
-            Future Goals & <span className="gradient-primary bg-clip-text text-transparent">Currently Building</span>
+          <h2 className="text-5xl md:text-6xl font-bold font-display mb-10 leading-tight">
+            Future Goals &{" "}
+            <span className="bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(255,255,255,0.2)]">
+              Currently Building
+            </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Exploring new frontiers in AI, building innovative solutions, and always open to collaborative opportunities.
+            Driven to create innovative AI-powered projects that blend technology and creativity — from intelligent assistants to smart automation — turning bold ideas into impactful digital solutions.
           </p>
         </div>
 
@@ -81,8 +87,11 @@ const FutureGoals = () => {
             <div className="absolute inset-0 gradient-primary opacity-5"></div>
             <CardContent className="p-12 text-center relative z-10">
               <Users className="h-12 w-12 text-primary mx-auto mb-6" />
-              <h3 className="text-3xl font-bold mb-4 gradient-secondary bg-clip-text text-transparent">
-                Let's Collaborate!
+              <h3 className="text-4xl md:text-5xl font-bold font-display mb-8 leading-tight">
+                Let's{" "}
+                <span className="bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(255,255,255,0.2)]">
+                  Collaborate!
+                </span>
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-6 max-w-2xl mx-auto">
                 I'm always excited to work on innovative AI projects, participate in hackathons, or collaborate 
