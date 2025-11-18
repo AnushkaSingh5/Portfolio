@@ -143,8 +143,8 @@ const Certifications = () => {
       date: "2025",
       credentialId: "LEETCODE-SQL50-2025",
       description:
-        "Successfully completed the SQL 50 challenge on LeetCode, demonstrating proficiency in writing efficient SQL queries and solving real-world database problems.",
-      skills: ["MySQL", "SQL Queries", "Joins", "Aggregation", "Database Management", "Problem Solving"],
+        "Completed the SQL 50 challenge on LeetCode, demonstrating proficiency in writing efficient SQL queries.",
+      skills: ["MySQL", "SQL Queries", "Joins", "Aggregation"],
       level: "Achievement",
       verified: true,
       link:"https://drive.google.com/file/d/1sNV_4s6PzXhKyJThURhHNEeY7dhA5atx/view?usp=sharing",
