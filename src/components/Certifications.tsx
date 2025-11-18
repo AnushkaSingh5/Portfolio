@@ -138,6 +138,19 @@ const Certifications = () => {
     },
     {
       id: 11,
+      title: "LeetCode SQL 50 Badge",
+      issuer: "LeetCode",
+      date: "2025",
+      credentialId: "LEETCODE-SQL50-2025",
+      description:
+        "Successfully completed the SQL 50 challenge on LeetCode, demonstrating proficiency in writing efficient SQL queries and solving real-world database problems.",
+      skills: ["MySQL", "SQL Queries", "Joins", "Aggregation", "Database Management", "Problem Solving"],
+      level: "Achievement",
+      verified: true,
+      link:"https://drive.google.com/file/d/1sNV_4s6PzXhKyJThURhHNEeY7dhA5atx/view?usp=sharing",
+    },
+    {
+      id: 12,
       title: "Certificate of Volunteering – TEDx KIET",
       issuer: "TEDx KIET Group of Institutions",
       date: "2025",
