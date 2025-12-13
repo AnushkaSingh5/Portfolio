@@ -20,6 +20,18 @@ const Certifications = () => {
     },
     {
       id: 2,
+      title: "Social Media Marketing Internship",
+      issuer: "InAmigos Foundation",
+      date: "2025",
+      credentialId: "U85300CT2020NPL010641",
+      description:"Successfully completed a Social Media Marketing Internship at InAmigos Foundation, gaining hands-on experience in digital marketing strategies, content promotion, and online brand engagement.",
+      skills: ["Social Media Marketing","Content Creation","Digital Marketing","Brand Promotion"],
+      level: "Internship",
+      verified: true,
+      link: "https://drive.google.com/file/d/1ABdz_mtC-LxNs0GVbX9sNmVaCV5Qg2Z1/view?usp=sharing"
+    },
+    {
+      id: 2,
       title: "Palo Alto Networks – Cybersecurity Foundation",
       issuer: "Palo Alto Networks Cybersecurity Academy",
       date: "2025",
