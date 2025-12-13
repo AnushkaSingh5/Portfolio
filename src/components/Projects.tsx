@@ -48,7 +48,7 @@ const Projects = () => {
       description: "A full-stack web app inspired by Airbnb, enabling users to search stays, view property details, apply filters, and book accommodations with secure authentication and persistent data storage.",
       image: travellingImg,
       technologies: ["HTML", "CSS", "JavaScript", "Node.js", "Express", "MongoDB"],
-      liveUrl: "https://wanderlust-travel-stay-platform-production.up.railway.app/listings",
+      liveUrl: "https://wanderlust-travel-stay-platform.onrender.com",
       githubUrl: "https://github.com/AnushkaSingh5/Wanderlust-Travel-Stay-Platform",
       featured: true,
       tags: ["Web App", "Travel", "Full Stack"]

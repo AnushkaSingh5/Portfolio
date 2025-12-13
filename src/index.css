@@ -47,12 +47,12 @@
     --gradient-secondary: linear-gradient(135deg, hsl(210 100% 60%), hsl(270 91% 65%));
     --gradient-hero: linear-gradient(135deg, hsl(240 10% 3.9%) 0%, hsl(270 50% 8%) 50%, hsl(320 50% 12%) 100%);
     --gradient-card: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(236, 72, 153, 0.1));
-    
+
     /* 3D Shadows & Glows */
     --shadow-3d: 0 25px 50px -12px rgba(139, 92, 246, 0.25);
     --shadow-glow: 0 0 40px rgba(139, 92, 246, 0.3);
     --shadow-card: 0 10px 30px -5px rgba(0, 0, 0, 0.3);
-    
+
     /* Animation Timings */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -130,43 +130,43 @@
   .glow-primary {
     box-shadow: var(--shadow-glow);
   }
-  
+
   .shadow-3d {
     box-shadow: var(--shadow-3d);
   }
-  
+
   .gradient-primary {
     background: var(--gradient-primary);
   }
-  
+
   .gradient-secondary {
     background: var(--gradient-secondary);
   }
-  
+
   .gradient-card {
     background: var(--gradient-card);
   }
-  
+
   .transition-smooth {
     transition: var(--transition-smooth);
   }
-  
+
   .transition-bounce {
     transition: var(--transition-bounce);
   }
-  
+
   .animate-float {
     animation: float 6s ease-in-out infinite;
   }
-  
+
   .animate-glow {
     animation: glow 2s ease-in-out infinite alternate;
   }
-  
+
   .transform-3d {
     transform-style: preserve-3d;
   }
-  
+
   .backface-hidden {
     backface-visibility: hidden;
   }
@@ -174,9 +174,12 @@
 
 /* 3D Keyframe Animations */
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0px) rotateX(0deg) rotateY(0deg);
   }
+
   50% {
     transform: translateY(-20px) rotateX(5deg) rotateY(5deg);
   }
@@ -186,6 +189,7 @@
   from {
     box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
   }
+
   to {
     box-shadow: 0 0 30px rgba(139, 92, 246, 0.6);
   }
@@ -196,6 +200,7 @@
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -207,6 +212,7 @@
     opacity: 0;
     transform: scale(0.9);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
