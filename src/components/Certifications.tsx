@@ -31,7 +31,7 @@ const Certifications = () => {
       link: "https://drive.google.com/file/d/1ABdz_mtC-LxNs0GVbX9sNmVaCV5Qg2Z1/view?usp=sharing"
     },
     {
-      id: 2,
+      id: 3,
       title: "Palo Alto Networks – Cybersecurity Foundation",
       issuer: "Palo Alto Networks Cybersecurity Academy",
       date: "2025",
@@ -44,7 +44,7 @@ const Certifications = () => {
       link:"https://drive.google.com/file/d/12SemM4_Nt1gM2uCdVNsCsd6eH6U8QJ4c/view?usp=sharing",
     },
     {
-      id: 3,
+      id: 4,
       title:
         "Infosys Springboard – Comprehensive Training on Unix and Linux OS Fundamentals",
       issuer: "Infosys Springboard",
@@ -58,7 +58,7 @@ const Certifications = () => {
       link:"https://drive.google.com/file/d/1WfVU3r-33pXqA6a3c_w7xh9R0D49OWUN/view?usp=sharing",
     },
     {
-      id: 4,
+      id: 5,
       title: "Getting Started with DevOps",
       issuer: "LinkedIn Learning",
       date: "2025",
@@ -71,7 +71,7 @@ const Certifications = () => {
       link:"https://drive.google.com/file/d/1CgGc_nTZFtuwzYgf1Vv8a_FQG0oAqV7y/view?usp=sharing",
     },
     {
-      id: 5,
+      id: 6,
       title: "Introduction to MongoDB",
       issuer: "MongoDB University",
       date: "2025",
@@ -84,7 +84,7 @@ const Certifications = () => {
       link:"https://drive.google.com/file/d/12C5_GUp15Arfp2neAlYoJ5vNmvYpIry1/view?usp=sharing",
     },
     {
-      id: 6,
+      id: 7,
       title: "Participation – NASA Space Apps Hackathon",
       issuer: "NASA International Space Apps Challenge",
       date: "2025",
@@ -97,7 +97,7 @@ const Certifications = () => {
       link:"https://drive.google.com/file/d/15ornZ2KEpi7UeRYP8jNtH50-TKHzXVU9/view?usp=sharing",
     },
     {
-      id: 7,
+      id: 8,
       title: "Certificate of Appreciation – Mentorship and Coordination",
       issuer: "KIET Group of Institutions",
       date: "2025",
@@ -110,7 +110,7 @@ const Certifications = () => {
       link:"https://drive.google.com/file/d/1xtd_2wqY5imQRZ7yOUV5ZcIjwB-fMsxw/view?usp=sharing",
     },
     {
-      id: 8,
+      id: 9,
       title: "Certificate of Management – Cybersecurx Event",
       issuer: "KIET Group of Institutions",
       date: "2025",
@@ -123,7 +123,7 @@ const Certifications = () => {
       link:"",
     },
     {
-      id: 9,
+      id: 10,
       title: "Certificate of Participation – INNOTECH Hackathon",
       issuer: "KIET Group of Institutions",
       date: "2024",
@@ -136,7 +136,7 @@ const Certifications = () => {
       link:"https://drive.google.com/file/d/1h2V-yGzeFeM42diPYd7W6VuOaS76nh1F/view?usp=sharing",
     },
     {
-      id: 10,
+      id: 11,
       title: "LeetCode 50 Days Streak Badge",
       issuer: "LeetCode",
       date: "2025",
@@ -149,7 +149,7 @@ const Certifications = () => {
       link:"https://drive.google.com/file/d/18l5GCUw2D6NiVlFfQKHTQI-qjVPDcthy/view?usp=sharing",
     },
     {
-      id: 11,
+      id: 12,
       title: "LeetCode SQL 50 Badge",
       issuer: "LeetCode",
       date: "2025",
@@ -162,7 +162,7 @@ const Certifications = () => {
       link:"https://drive.google.com/file/d/1sNV_4s6PzXhKyJThURhHNEeY7dhA5atx/view?usp=sharing",
     },
     {
-      id: 12,
+      id: 13,
       title: "Certificate of Volunteering – TEDx KIET",
       issuer: "TEDx KIET Group of Institutions",
       date: "2025",
